@@ -6,3 +6,4 @@ backend/node_modules
 .build/
 layout.md
 variables.env
+frontend/.eslintrc
