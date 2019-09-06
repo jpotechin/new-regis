@@ -8,8 +8,8 @@ import { perPage } from '../config';
 
 // query for data
 const ALL_ITEMS_QUERY = gql`
-  query ALL_ITEMS_QUERY($skip: Int = 0) {
-    items(skip: $skip) {
+   query ALL_ITEMS_QUERY($skip: Int = 0, $first: Int = ${perPage}) {
+    items(first: $first, skip: $skip) {
       id
       title
       price
