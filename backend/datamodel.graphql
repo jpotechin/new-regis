@@ -1,22 +1,7 @@
-enum Permission {
-  ADMIN
-  USER
-  ITEMCREATE
-  ITEMUPDATE
-  ITEMDELETE
-  PERMISSIONUPDATE
-}
-
 type User {
- id: ID! @id
- updatedAt: DateTime! @updatedAt
- createdAt: DateTime! @createdAt
- name: String!
- email: String! @Unique
- password: String!
- resetToken: String
- resetTokenExpiry: Float
- permissions: [Permission] @scalarList(strategy:RELATION)
+  id: ID! @id
+  name: String!
+  email: String!
 }
 
 type Item {
@@ -26,7 +11,4 @@ type Item {
   image: String
   largeImage: String
   price: Int!
-  # createAt: DateTime!
-  # updatedAt: DateTime!
-  # user: User!
 }
