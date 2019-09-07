@@ -7,3 +7,4 @@ backend/node_modules
 layout.md
 variables.env
 frontend/.eslintrc
+backend/prisma32332.yml

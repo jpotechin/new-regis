@@ -1,5 +1,5 @@
 endpoint: ${env:PRISMA_ENDPOINT}
-datamodel: datamodel.graphql
+datamodel: datamodel.prisma
 # secrete: ${env:PRISMA_SECRET}
 generate:
   - generator: graphql-schema

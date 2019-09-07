@@ -27,7 +27,7 @@
     "stripe": "^6.12.1"
   },
   "repository": {
-    "url": "wesbos.com"
+    "url": "potechin.dev"
   },
   "babel": {
     "presets": [
