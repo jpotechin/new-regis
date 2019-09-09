@@ -50,9 +50,11 @@ const Cart = () => (
           <ul>{me.cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem} />)}</ul>
           <footer>
             <p>{formatMoney(calcTotalPrice(me.cart))}</p>
-            <TakeMyMoney>
-              <RegisButton>Checkout</RegisButton>
-            </TakeMyMoney>
+            {me.cart.length && (
+              <TakeMyMoney>
+                <RegisButton>Checkout</RegisButton>
+              </TakeMyMoney>
+            )}
           </footer>
         </CartStyles>
       );
