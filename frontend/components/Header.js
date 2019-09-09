@@ -4,6 +4,7 @@ import NProgress from 'nprogress';
 import Router from 'next/router';
 import Nav from './Nav';
 import Cart from './Cart';
+import Search from './Search';
 
 
 //This is the progress bar at the top for page load while page is generated/loaded
@@ -73,7 +74,7 @@ const Header = () => (
             <Nav />
         </div>
         <div className="sub-bar">
-            <p>Search</p>
+          <Search />
         </div>
         <Cart />
     </StyledHeader>
