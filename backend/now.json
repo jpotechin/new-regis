@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "name": "Project Name",
+    "builds": [{
+        "src": "src/index.js",
+        "use": "@now/node-server"
+    }],
+    "routes": [{
+        "src": "/.*",
+        "dest": "src/index.js"
+    }],
+    "env": {
+        "FRONTEND_URL": "http://localhost:7777",
+        "PRISMA_ENDPOINT": "https://us1.prisma.sh/josephpotechin-33b23c/authentic-regis/dev",
+        "PRISMA_SECRET": "key",
+        "APP_SECRET": "pass",
+        "STRIPE_SECRET": "sk_test_Oe0wa34fXwtXkv1AvhasdRJq00VCbKaCqF",
+        "PORT": "4444",
+        "MAIL_HOST": "smtp.mailtrap.io",
+        "MAIL_PORT": "2525",
+        "MAIL_USER": "894b2f240b74c2",
+        "MAIL_PASS": "20903a8edbfda9"
+    }
+}
