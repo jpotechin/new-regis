@@ -1,6 +1,7 @@
-endpoint: ${env:PRISMA_ENDPOINT}
+#endpoint: ${env:PRISMA_ENDPOINT}
+endpoint: https://authregis-prod-84dc6b90e3.herokuapp.com/auth-regis-prod/prod
 datamodel: datamodel.prisma
-# secrete: ${env:PRISMA_SECRET}
+secret: ${env:PRISMA_SECRET}
 generate:
   - generator: graphql-schema
     output: ./src/generated/prisma.graphql
